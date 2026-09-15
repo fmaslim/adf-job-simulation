@@ -1,0 +1,41 @@
+<section class="employee-list">
+  <header class="employee-list__header">
+    <h1>Employees</h1>
+    <button
+      type="button"
+      class="employee-list__refresh"
+      (click)="loadEmployees()"
+      [disabled]="loading"
+    >
+      Refresh
+    </button>
+  </header>
+
+  <p *ngIf="loading" class="employee-list__status" role="status">Loading employees...</p>
+
+  <p *ngIf="errorMessage" class="employee-list__status employee-list__status--error" role="alert">
+    {{ errorMessage }}
+  </p>
+
+  <table *ngIf="!loading && !errorMessage" class="employee-list__table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th class="employee-list__salary-col">Salary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees">
+        <td>{{ employee.id }}</td>
+        <td>{{ employee.name }}</td>
+        <td>{{ employee.department }}</td>
+        <td class="employee-list__salary-col">{{ employee.salary | currency }}</td>
+      </tr>
+      <tr *ngIf="employees.length === 0">
+        <td colspan="4" class="employee-list__empty">No employees found.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>

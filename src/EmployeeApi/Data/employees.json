@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Ava Thompson",
+    "department": "Engineering",
+    "salary": 98000
+  },
+  {
+    "id": 2,
+    "name": "Liam Garcia",
+    "department": "Engineering",
+    "salary": 87500
+  },
+  {
+    "id": 3,
+    "name": "Sophia Patel",
+    "department": "Finance",
+    "salary": 91200
+  },
+  {
+    "id": 4,
+    "name": "Noah Kim",
+    "department": "Human Resources",
+    "salary": 72300
+  },
+  {
+    "id": 5,
+    "name": "Isabella Rossi",
+    "department": "Marketing",
+    "salary": 68900
+  }
+]

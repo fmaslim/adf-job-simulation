@@ -1,0 +1,84 @@
+.employee-list {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #1f2933;
+}
+
+.employee-list__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.employee-list__header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.employee-list__refresh {
+  padding: 0.4rem 0.9rem;
+  border: 1px solid #cbd2d9;
+  border-radius: 4px;
+  background: #f5f7fa;
+  color: #1f2933;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.employee-list__refresh:hover:not(:disabled) {
+  background: #e4e7eb;
+}
+
+.employee-list__refresh:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.employee-list__status {
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  background: #f5f7fa;
+  color: #52606d;
+}
+
+.employee-list__status--error {
+  background: #fde8e8;
+  color: #9b1c1c;
+}
+
+.employee-list__table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.employee-list__table th,
+.employee-list__table td {
+  text-align: left;
+  padding: 0.6rem 0.9rem;
+  border-bottom: 1px solid #e4e7eb;
+}
+
+.employee-list__table th {
+  background: #f5f7fa;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #52606d;
+}
+
+.employee-list__salary-col {
+  text-align: right;
+}
+
+.employee-list__empty {
+  text-align: center;
+  color: #7b8794;
+  padding: 1.5rem;
+}
